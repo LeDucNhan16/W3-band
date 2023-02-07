@@ -1,2 +1,0 @@
-# dome-githud
- nhan leesin
