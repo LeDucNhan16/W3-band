@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/index.css">
+    <link rel="stylesheet" href="./asset/responsize.css">
+    <link rel="stylesheet" href="./asset/form-icon/themify-icons/themify-icons.css">
+    <title>Document</title>
+    <style>
+        .colerRed {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" >
+        <div id="header">
+            <ul class="pc__nav">
+                <li><a href="#home">Home</a></li>
+                <li ><a href="#b">Band</a></li>
+                <li ><a href="#c">Tour</a></li>
+                <li ><a href="#d">Contact</a></li>
+                <li><a href="#ab">More
+                    <i class="ti-angle-down"></i>
+                </a>
+                    <ul class="subnav__pc">
+                        <li><a href="#e">Merchandise</a></li>
+                        <li><a href="#f">Extras</a></li>
+                        <li><a href="#g">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div id="overlay">
+                <div id="text"></div>
+            </div>
+            </div>
+            <div onclick="overlay()" class="overlay"></div>
+            <div  class="mobile__tablet__nav">
+                <i onclick="opens()" class="ti-menu icon__menu"></i>     
+                <i onclick="closes()" class="ti-close icon__close"></i>
+                <ul  class="nav__menu">
+                    <li><a class="elements" href="#home">Home</a></li>
+                    <li><a class="elements" href="#b">Band</a></li>
+                    <li><a class="elements" href="#c">Tour</a></li>
+                    <li><a class="elements" href="#d">Contact</a></li>
+                    <li onclick="subnav()" class="subnav__menu"><a href="###">More
+                        <i class="ti-angle-down"></i>
+                    </a>
+                        <ul  class="nav__menu__subnav">
+                            <li><a class="elements" href="#e">Merchandise</a></li>
+                            <li><a class="elements" href="#f">Extras</a></li>
+                            <li><a class="elements" href="#g">Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="app"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
